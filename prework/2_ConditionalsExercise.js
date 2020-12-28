@@ -165,7 +165,11 @@ function exercise6(varA, varB, varC) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  if ( varA === varB && varA !== varC ) {
+    answer6 = true;
+  } else {
+    answer6 = false;
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
@@ -173,7 +177,7 @@ function exercise6(varA, varB, varC) {
 }
 
 
-// EXERCISE 8.
+// EXERCISE 8. [7]
 // Use a switch conditional statement with case clauses such that if `num7` is
 // a number and it has a value of 1 that `answer7` is assigned the string:
 // "You won!"
@@ -191,7 +195,21 @@ function exercise7(num7) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  switch (num7) {
+    case 1:
+      answer7 = "You won!";
+      break;
+    case 7:
+      answer7 = "You are lucky!";
+      break;
+    case 101:
+      answer7 = "Welcome to coding 101!";
+      break;
+    case 1000000:
+      answer7 = "You are one in a million!";
+      break;      
+      default: answer7 = "Thanks for that!";
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
@@ -200,7 +218,7 @@ function exercise7(num7) {
 
 // EXERCISE 8.
 // Using any conditional assign the value of true to answer8 if:
-// the values of amount 1 and amount2 are between the values of
+// the values of amount1 and amount2 are between the values of
 // minimum and maximum
 // if not, assign a value of false to answer8
 function exercise8(amount1, amount2, minimum, maximum) {
@@ -208,7 +226,11 @@ function exercise8(amount1, amount2, minimum, maximum) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  if ( amount1 >= minimum && amount1 <= maximum && amount2 >= minimum && amount2 <= maximum ) {
+    answer8 = true; 
+  } else {
+    answer8 = false;
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
@@ -227,7 +249,26 @@ function exercise9(item) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  let dataType = typeof item;
+  if ( dataType === "number" ) {
+    switch (item) {
+      case 1:
+        answer9 = "You won!";
+        break;
+      case 7:
+        answer9 = "You are lucky!";
+        break;
+      case 101:
+        answer9 = "Welcome to coding 101!";
+        break;
+      case 1000000:
+        answer9 = "You are one in a million!";
+        break;      
+        default: answer9 = "Thanks for that!";
+    }
+  } else {
+    answer9 = `Please send a number, that was a ${dataType}.`
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
@@ -250,7 +291,17 @@ function exercise10(num10) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  if ( num10 % 3 === 0 && num10 % 5 !== 0 ) {
+    answer10 = "Fizz";
+  } else 
+  if ( num10 % 5 === 0 && num10 % 3 !== 0 ) {
+    answer10 = "Buzz";
+  } else 
+  if ( num10 % 15 === 0 ) {
+    answer10 = "Fizz Buzz";
+  } else {
+    answer10 = num10;
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
@@ -260,6 +311,7 @@ function exercise10(num10) {
 // Congrats, you made it to the end! You rock!
 // Did you find this easy or hard? If you used references, which ones helped you? 
 // Please answer in a comment below.
-//
+  //  This was easy.
+  //  References: MDN switch case; typeof syntax, chrome console
 
 // Email your file to us or commit your file to GitHub and email us a link.
