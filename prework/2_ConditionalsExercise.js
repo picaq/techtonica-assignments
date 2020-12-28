@@ -14,7 +14,7 @@
 //   // ------------------------------------------
 //   // Write your code for exercise 1 below here:
 //   // ------------------------------------------
-//   
+  
 //   // ------------------------------------------
 //   // And above here
 //   // ------------------------------------------
@@ -56,7 +56,10 @@ function exercise1(num1) {
   // ------------------------------------------
   // Write your code for exercise 1 below here:
   // ------------------------------------------
-
+  answer1 = "num1 is small";
+  if ( num1 > 10 ) {
+    answer1 = `The value of num1 is ${num1} and is greater than 10`;
+  }
   // ------------------------------------------
   // And above here
   // ------------------------------------------
@@ -79,7 +82,10 @@ function exercise2(num2) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  answer2 = num2 + " is even";
+  if ( num2 % 2 === 1 || num2 % 2 === -1 ) {
+    answer2 = num2 + " is odd";
+  } 
   // --------------------------------------------
   // And above here
   // --------------------------------------------
@@ -101,7 +107,14 @@ function exercise3(num3) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  if ( num3 > 0 ) {
+    answer3 = num3 + " is positive";
+  } else
+  if ( num3 < 0 ) {
+    answer3 = num3 + " is negative";
+  } else {
+    answer3 = num3 + " is zero";
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
@@ -120,7 +133,11 @@ function exercise4(varA, varB) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
-
+  if ( varA === varB ) {
+    answer4 = "varA and varB are equal";
+  } else {
+    answer4 = "varA and varB differ";
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
@@ -132,6 +149,11 @@ function exercise4(varA, varB) {
 // In exercise 4, what are some of the unexpected cases where `varA` and `varB`
 // seemed like they are equal, but would not pass the tests? In your analysis
 // consider other data types beside strings and variables.
+  //  exercise4("", null) seemed like they were equal but did not pass the test
+  //  "" , ``, and '' are all considered equal
+  //  when varA == varB is tested, 0 == "" == false, but "" != null
+  //  for both varA == varB and varA === varB, passing both argumens as NaN indicates that they differ
+
 
 
 // EXERCISE 6.
