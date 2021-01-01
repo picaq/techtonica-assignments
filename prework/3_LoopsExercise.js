@@ -11,19 +11,60 @@
 
 // Exercise 1. Write a 'while' loop that prints the integers (whole numbers)
 // between 1 and 5 (inclusive).
+  let i = 1;
+  while ( i <= 5 ) {
+    console.log(i);
+    i++;
+  }
 
 // Exercise 2. Write a 'do while' loop that prints the integers (whole numbers)
 // between 1 and 5 (inclusive).
+  let j = 1;
+  do {
+    console.log(j);
+    j++;
+  } while ( j <= 5 );
 
 // Exercise 3. Write a 'for' loop that prints the integers (whole numbers)
 // between 1 and 5 (inclusive).
+  for ( let k = 1 ; k <= 5 ; k++ ) {
+    console.log(k);
+  }
 
 // Exercise 4. Now we want a loop that prints the integers
 // counting DOWN from 10 to 1 (inclusive). Write three loops that do this, to practice
 // writing loops in all 3 ways -- as a 'while', 'do while', and 'for' loop.
+  let l = 10;
+  while ( l >= 1 ) {
+    console.log(l);
+    l--;
+  }
+  let m = 10;
+  do {
+    console.log(m);
+    m--;
+  } while ( m >= 1 );
+
+  for ( let n = 10 ; n > 0 ; n-- ) {
+    console.log(n);
+  }
 
 // Exercise 5. Write a loop that prints the integers from 7 to 27. Write this
 // loop in all 3 ways -- as a 'while', 'do while', and 'for' loop.
+  let o = 7;
+  while ( o <= 27 ) {
+    console.log(o);
+    o++;
+  }
+  let p = 7;
+  do {
+    console.log(p);
+    p++;
+  } while ( p <= 27 )
+
+  for ( let q = 7 ; q <= 27 ; q++ ) {
+    console.log(q);
+  }
 
 // Exercise 6. Write a loop that prints numbers between 0 and 100, counting by tens.
 // I.e. it will print 10, then 20, then 30, etc.
@@ -91,6 +132,6 @@ for (let outsideCounter = 0; outsideCounter <= 3 /*???*/; ) {
 // Congrats, you made it to the end!
 // Did you find this easy or hard? If you used references, which ones helped you?
 // Please answer in a comment below.
-//
-
+  //
+  //  MDN do...while statement (for syntax), chrome console
 // Email your file to us or commit your file to GitHub and email us a link.
