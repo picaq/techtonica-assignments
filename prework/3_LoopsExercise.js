@@ -156,10 +156,10 @@ inside 1
 *********************************** 
 */
 
-for (let outsideCounter = 0; outsideCounter <= 3 /*???*/; ) {
+for (let outsideCounter = 0; outsideCounter <= 3 ; outsideCounter++ ) {
   console.log("counting down from", outsideCounter);
-  for (let insideCounter = outsideCounter /*???*/ /*???*/; ; ) {
-    console.log("inside" /*???*/);
+  for (let insideCounter = outsideCounter ; insideCounter > 0 ; insideCounter-- ) {
+    console.log("inside", insideCounter);
   }
   console.log("***********************************");
 }
@@ -167,6 +167,6 @@ for (let outsideCounter = 0; outsideCounter <= 3 /*???*/; ) {
 // Congrats, you made it to the end!
 // Did you find this easy or hard? If you used references, which ones helped you?
 // Please answer in a comment below.
-  //
+  //  I found this to be easy
   //  MDN do...while statement (for syntax), chrome console
 // Email your file to us or commit your file to GitHub and email us a link.
