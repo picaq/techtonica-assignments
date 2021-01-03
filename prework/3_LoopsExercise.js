@@ -69,19 +69,41 @@
 // Exercise 6. Write a loop that prints numbers between 0 and 100, counting by tens.
 // I.e. it will print 10, then 20, then 30, etc.
 // Write this loop in all 3 ways -- as a 'while', 'do while', and 'for' loop.
+  let r = 0;
+  while ( r < 100 ) {
+    r+=10;
+    console.log(r);
+  }
+  let s = 0; 
+  do {
+    s+=10;
+    console.log(s);
+  } while ( s < 100);
+
+  for ( let t = 1 ; t <= 10 ; t++ ) {
+    console.log(t*10);
+  }
 
 // Exercise 7. Add a comment as to why the following loop is an infinite loop (will
 // run without ever stopping). Then fix the loop so that it stops when
 // counterFour is equal to -100.
 
+  // The variable counterFour decrements from 1 to 0 to -1 ... and will never reach 2, 
+  // which is the stop condition.
+  // The while loop is waiting for counterFour to reach 2 but counterFour just continues
+  // to get further away from 2 in the opposite direction and it will always be < 2
 let counterFour = 1;
-while (counterFour < 2) {
+while (counterFour > -100 ) {
   console.log("HELP ME!");
   counterFour--;
 }
 
 // Exercise 8. Make a variable that contains your favorite integer. Write a loop
 // (your choice which type) that prints the integers from 0 to that number.
+  let u = 7;
+  for ( u = 0 ; u <= 7 ; u++ ) {
+    console.log(u);
+  }
 
 // Exercise 9. Make a variable that contains your favorite integer (this time make sure it's
 // less than 100). Write a loop (your choice which type) that prints the integers from 0 to 100.
@@ -93,12 +115,25 @@ while (counterFour < 2) {
 // 3 not my favorite number
 // ...
 // (Hint - use an if statement in your loop)
+  let kevin = 7;
+  for ( v = 0 ; v <= 100 ; v++ ) {
+    if ( v === kevin ) {
+      console.log( v + " my favorite number!");
+    } else {
+      console.log( v + " not my favorite number");
+    }
+  }
 
 // Exercise 10. In some of the exercises above, we had you write all 3 types of loops, for practice.
 // But in real life, how would you decide which type of loop to use? You might not have an
 // exact answer, but spend a few minutes thinking about the different types of loops and/or
 // doing some research and write down your thoughts in a comment below:
-//
+  // In real life, I generally pick a for loop as the default loop because it comes with a self-contained
+  // iterator , termination condition, and step size.
+  // the only instance I would pick a do...while loop is if there will always be a default output
+  // regardless of the input conditions. I would pick a while loop if the iterator or termination condition
+  // is a global variable or in a scope that can be modified by other functions, so that it would be apt
+  // for the iterator or stop condition to be modifiable outside of the loop
 
 // Exercise 11. Now we'll practice using nested loops (a loop inside another loop)!
 // Update the nested loops below to so that for each value of outsideCounter,
