@@ -118,16 +118,21 @@ console.log("The value of b is " + b);
 // Here's a string I made representing my grocery list.
 // Using split() and groceryList, make an array of my grocery list items
 const groceryList = "eggs,carrots,orange juice";
+// let groceryListArr = groceryList.split(/\W+/);  // \W = not word
+let groceryListArr = groceryList.split(',');  // didn’t see that orange juice was one single item
 
 // Here's a string I made representing my morning schedule.
 // Using split() and mySchedule, make an array of the *first 2* things I do in the morning
 // There are multiple ways to do this, but try doing it using only the split() function.
 const mySchedule = "wake up--->brush teeth--->eat breakfast--->go to work";
+let myFirst2Schedule = mySchedule.split('--->', 2);
 
 // Congrats, you made it to the end!
 // Did you find this easy or hard? If you used references, which ones helped you?
 // Please answer in a comment below.
-//
+  // I find this to be easy, easier than 3_Loops, however, 
+  // I thought that space was a delimiter for groceryList at first
+  // resources: https://regexr.com/ , chrome console, node.js debugger
 
 // Email your file to the course staff,
 // or commit your file to GitHub and email us a link.
