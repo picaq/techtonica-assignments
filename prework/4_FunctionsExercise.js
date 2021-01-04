@@ -11,28 +11,60 @@
 
 // Exercise 1. Define a function called logGreeting() that prints the string “Hello!” (use console.log).
 // Underneath the function, write the line of code that runs the function.
+  function logGreeting() {
+    console.log("“Hello!”");
+  }
+  logGreeting();
 
 // Exercise 2. Define a function called getName() that *returns* a string that is your name.
 // Remember, this function should return the string -- not print it.
 // Then print your name in the console by passing getName() into the console.log() function.
+  function getName() {
+    return "Mandy Chen";
+  }
+  console.log(getName());
 
 // Exercise 3. Call a function within a function -- Write a function called logGreeting2()
 // that prints a full sentence that contains your name: "Hello! My name is <name>."
 // logGreeting2 should call myName() to get your name.
 // Then print your greeting to the console by calling logGreeting2().
+  function logGreeting2() {
+    console.log(`Hello! My name is ${myName()}.`)   // without parens, prints the function, with parens evaluates.
+  }
+  function myName() {
+    return getName();
+  }
+  logGreeting2();
 
 // Exercise 4. Write a function that takes 3 parameters that are all numbers.
 // The function should return the sum of the 3 numbers.
 // Then write some function calls you would use to test your function.
+  function _3params(_1,_2,_3) {
+    return _1 + _2 + _3 ;
+  }
+  console.log(_3params(12, 5, 6), _3params(1, 7, 11), _3params(100, 50, 150));
 
 // Exercise 5. Let's say a museum gives a discount for children ages 14 or under, and seniors 65 or older.
 // Write a function that takes in a person's age and returns true if they should get a discount.
 // Otherwise it should return false.
 // Then write some function calls you would use to test your function.
+  let museumDiscount = function(age) {
+    if ( age >= 0 && age <= 14 || age >= 65 ) {
+      return true;
+    }
+    return false;
+  }
+  console.log(museumDiscount(0), museumDiscount(11), museumDiscount(14),  museumDiscount(36), museumDiscount(77));
 
 // Exercise 6. Write a function that takes 2 parameters -- one number and one string.
 // The function should print the string the given number of times.
 // Then write some function calls you would use to test your function.
+  function twoParams(num, str) {
+    for ( let i = 0 ; i < num ; i++ ) {
+      console.log(str);
+    }
+  }
+  console.log(twoParams(12, "Cheese is tasty!"), twoParams(7, "Kevin is from heaven."), twoParams(6, "Hexagon is the bestagon!"));
 
 // Exercise 7. Read the following code (don't run it yet)
 function mysteryFunction1(p1) {
