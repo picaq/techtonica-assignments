@@ -77,10 +77,14 @@ console.log("The value of z is " + z);
 
 // Without running the code, write down in a comment:
 // 1. What mysteryFunction1 does
+  //  mysteryFunction1 returns the input argument multiplied by 2
 // 2. What prints out for the value of y
+  //  4
 // 3. What prints out for the value of z
+  //  8
 // Now run the code and see if you're correct.
 // Were you correct? If not, what did you learn?
+  //  I was correct
 
 // Exercise 8. Read the following code (don't run it yet)
 function mysteryFunction2(p1, p2) {
@@ -94,10 +98,17 @@ console.log("The value of b is " + b);
 
 // Without running the code, write down in a comment:
 // 1. What mysteryFunction2 does
+  //  mysteryFunction2 takes the difference between the two input parameters, stores them in constant x, 
+  //  then returns const x
 // 2. What prints out for the value of a
+  //  6
 // 3. What prints out for the value of b
+  //  6
 // Now run the code and see if you're correct.
 // Were you correct? If not, what did you learn?
+  // I was not correct! I assumed that a const can never be changed, but it seems like when 
+  // mysteryFunction2 is ran subsequent times, that const x is generated in a new instance independent
+  // of the first, such that b would evaluate to 6 - 1 = 5
 
 // Exercise 9. This exercise is to practice reading the documentation for functions.
 // String.split() is a function in the JavaScript standard library that you can use in your code.
