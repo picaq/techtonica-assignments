@@ -61,20 +61,31 @@
              : console.log(num, "negative"));
     }
     ex11([-2, 200, 50]);
+    
 // Exercise 12. Make an object called me that contains the following keys: name, favoriteAnimal, favoriteNumber
 // The values of those keys can be whatever you choose.
+    let me = { 
+        name: "Mandy",
+        favoriteAnimal: "rabbit",
+        favoriteNumber: (Math.sqrt(5)+1)/2
+    }
 
 // Exercise 13. Add another 2 keys and values to the object (you choose what they are)
+    me.favoriteFood = "Four Cheese Pizza";
+    me.awake = true;
 
 // Exercise 14. Update the favoriteAnimal value to something different
+    me.favoriteAnimal = "butterfly";
 
 // Exercise 15. Print the value of favoriteAnimal.
 // Note: there are at least 2 ways to get the value of a key, try to write both.
+    console.log(me.favoriteAnimal);
+    console.log(me['favoriteAnimal']);
 
 // Congrats, you made it to the end!
 // Did you find this easy or hard? If you used references, which ones helped you?
 // Please answer in a comment below.
-    //
+    // I find this easy; so I decided to challenge myself by using forEach() and a ternary operator, which made me stuck for a bit
     // I chatted with Taela while doing this
     // used Array.prototype.indexOf() MDN reference & and Conditional (ternary) operator MDN reference
 
