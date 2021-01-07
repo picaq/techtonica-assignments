@@ -34,7 +34,7 @@
     animals.pop(animals[animals.length-1]);
 
 // Exercise 9. Now make a new array named assortedThings that contains at least 3 strings and 3 numbers.
-    let assortedThings = ["probiotics", "vegetarian chicken", "pistachios", 6, 123, 3.14159]
+    let assortedThings = ["probiotics", "vegetarian chicken", "pistachios", 6, 123, 3.14159];
 
 // Exercise 10. Write a for loop that iterates through the assortedThings array and prints each index and item, such as:
 // Item #0 is potato
