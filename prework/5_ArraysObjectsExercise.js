@@ -43,7 +43,7 @@
 // ...
     for ( let i = 0 ; i < assortedThings.length ; i++ ) {
         let item = assortedThings[i];
-        console.log("Item #", indexOf(item), "is" , item);
+        console.log("Item #"+assortedThings.indexOf(item), "is" , item);
     }
 
 // Exercise 11. Write a function that takes an array of numbers as a parameter. For each number in the array,
@@ -55,7 +55,12 @@
 // 50 small
 //
 // Then write some function calls you would use to test your function.
-
+    let ex11 = function(arr) {
+        arr.forEach( num => num > 100 ? console.log(num, "BIG")
+             : num >= 0 && num <= 100 ? console.log(num, "small")
+             : console.log(num, "negative"));
+    }
+    ex11([-2, 200, 50]);
 // Exercise 12. Make an object called me that contains the following keys: name, favoriteAnimal, favoriteNumber
 // The values of those keys can be whatever you choose.
 
@@ -71,6 +76,7 @@
 // Please answer in a comment below.
     //
     // I chatted with Taela while doing this
+    // used Array.prototype.indexOf() MDN reference & and Conditional (ternary) operator MDN reference
 
 // Email your file to the course staff,
 // or commit your file to GitHub and email us a link.
