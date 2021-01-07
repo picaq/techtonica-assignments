@@ -34,13 +34,17 @@
     animals.pop(animals[animals.length-1]);
 
 // Exercise 9. Now make a new array named assortedThings that contains at least 3 strings and 3 numbers.
-    
+    let assortedThings = ["probiotics", "vegetarian chicken", "pistachios", 6, 123, 3.14159]
 
 // Exercise 10. Write a for loop that iterates through the assortedThings array and prints each index and item, such as:
 // Item #0 is potato
 // Item #1 is 4
 // Item #2 is Hello World
 // ...
+    for ( let i = 0 ; i < assortedThings.length ; i++ ) {
+        let item = assortedThings[i];
+        console.log("Item #", indexOf(item), "is" , item);
+    }
 
 // Exercise 11. Write a function that takes an array of numbers as a parameter. For each number in the array,
 // print the number and "BIG" if it's over 100, "small" if it's between 0 and 100, and "negative" if
@@ -65,7 +69,8 @@
 // Congrats, you made it to the end!
 // Did you find this easy or hard? If you used references, which ones helped you?
 // Please answer in a comment below.
-//
+    //
+    // I chatted with Taela while doing this
 
 // Email your file to the course staff,
 // or commit your file to GitHub and email us a link.
