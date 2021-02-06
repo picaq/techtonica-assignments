@@ -30,12 +30,12 @@ let printVacations2 = function(arr) {
 printVacations2(array2);
 
 
-let table = function(num) {
-    if ( num == 1 ) { return [num] };
-    if ( num == 2 ) { return [[1,2][2,4]] };
-    let 
+// let table = function(num) {
+//     if ( num == 1 ) { return [num] };
+//     if ( num == 2 ) { return [[1,2][2,4]] };
+//     let 
 
-}
+// }
 
 // 1 2
 // 2 4
