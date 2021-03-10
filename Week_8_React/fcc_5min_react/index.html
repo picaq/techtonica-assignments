@@ -18,8 +18,17 @@
     ADD REACT CODE HERE 
     */  
     class Hello extends React.Component {
+
+        constructor() {
+            super();  // required to re-initialze this keyword before setting state
+            this.state = {
+                message: "my friend (from state)!"
+            }
+        }
+
         render() {
-            return <h1>Hello {this.props.message}!</h1>;
+            // return <h1>Hello {this.props.message}!</h1>;
+            return <h1>Hello {this.state.message}!</h1>;
         }
     }
     // Hey React! Please render the Hello component inside the DOM node with an id of root!
