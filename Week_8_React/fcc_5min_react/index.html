@@ -24,6 +24,13 @@
             this.state = {
                 message: "my friend (from state)!"
             }
+            this.updateMessage = this.updateMessage.bind(this);
+        }
+
+        updateMessage() {
+            this.setState({ 
+                message: "my friend (from changed state)!"
+            });
         }
 
         render() {
