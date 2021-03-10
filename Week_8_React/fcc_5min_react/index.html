@@ -35,7 +35,15 @@
 
         render() {
             // return <h1>Hello {this.props.message}!</h1>;
-            return <h1>Hello {this.state.message}!</h1>;
+            // return <h1>Hello {this.state.message}!</h1>;
+
+            // hooking an event listener onto the button, listening for the onClick event
+            return (
+                <header>    
+                    <h1>Hello {this.state.message}!</h1>
+                    <button onClick={this.updateMessage}>Click me!</button>
+                </header>
+            )
         }
     }
     // Hey React! Please render the Hello component inside the DOM node with an id of root!
