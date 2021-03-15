@@ -56,7 +56,20 @@ class App extends React.Component {
         { text: 'Draw a flower', isCompleted: false }
       ]
     };
+    
   }
+  // New method
+  updateTodo(todo, changes) {
+    this.setState({
+      todos: this.state.todos.map((existing) => {
+        if (todo === existing) {
+          return { ...existing, ...changes };
+        }
+        return existing;
+      }),
+    });
+  }
+  
   render() {
     const { todos } = this.state;
     return (
