@@ -43,11 +43,19 @@ class App extends React.Component {
     //   todos: [{ text: 'Walk dog' }, { text: 'Feed cat' }]
     // };
     this.state = {
-  todos: [
-    { text: 'Walk dog', isCompleted: false },
-    { text: 'Feed cat', isCompleted: false }
-  ]
-};
+      todos: [
+        { text: 'Walk dog', isCompleted: false },
+        { text: 'Feed cat', isCompleted: false },
+        { text: 'Water plants', isCompleted: false },
+        { text: 'Call boyfriend', isCompleted: false },
+        { text: 'Drink water', isCompleted: false },
+        { text: 'Complete code challenge', isCompleted: false },
+        { text: 'Eat breakfast', isCompleted: false },
+        { text: 'Take a break!', isCompleted: false },
+        { text: 'Pet a cat', isCompleted: false },
+        { text: 'Draw a flower', isCompleted: false }
+      ]
+    };
   }
   render() {
     const { todos } = this.state;
