@@ -73,23 +73,19 @@ class App extends React.Component {
   render() {
     const { todos } = this.state;
     // pass the method in as a prop, bound to this so it will work
-    todos.map((todo, idx) => (
-      <Todo
-        key={idx}
-        todo={todo}
-        updateTodo={this.updateTodo.bind(this)}
-      />
-    ));
+
     return (
       <div className="App">
         <h1>Todos</h1>
         <div>
-          {todos.length &&
-            todos.map((todo, idx) => <Todo key={idx} todo={todo} />)}
-        </div>
-      </div>
-    );
+        {todos.length && todos.map((todo, idx) => 
+          ( <Todo 
+            key={idx} 
+            todo={todo} 
+            updateTodo={this.updateTodo.bind(this)} /> ))} 
+        </div> 
+      </div> ); 
+    } 
   }
-}
 
 export default App;
