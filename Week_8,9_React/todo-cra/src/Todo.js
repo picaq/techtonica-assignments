@@ -5,10 +5,10 @@ class Todo extends React.Component {
     const { todo } = this.props;
     const { text, isCompleted } = todo;
     return (
-      <div>
-        <label><input type="checkbox" checked={isCompleted}></input>
-        {text}</label>
-      </div>
+      <label>
+        <input type="checkbox" checked={isCompleted}></input>
+        {text}
+      </label>
     );
   }
 }
