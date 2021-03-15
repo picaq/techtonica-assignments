@@ -39,9 +39,15 @@ import './App.css';
 class App extends React.Component {
   constructor(props) {
     super(props);
+    // this.state = {
+    //   todos: [{ text: 'Walk dog' }, { text: 'Feed cat' }]
+    // };
     this.state = {
-      todos: [{ text: 'Walk dog' }, { text: 'Feed cat' }]
-    };
+  todos: [
+    { text: 'Walk dog', isCompleted: false },
+    { text: 'Feed cat', isCompleted: false }
+  ]
+};
   }
   render() {
     const { todos } = this.state;
